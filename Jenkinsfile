@@ -10,10 +10,6 @@ node('built-in') {
     // some block
 	sh 'mvn package'
 	}
-	stage('Continous Deployment') 
-	{
-    // some block
-	sh 'scp /home/ubuntu/.jenkins/workspace/PipelineJob/webapp/target/webapp.war	ubuntu@172.31.39.126:/var/lib/tomcat8/webapps/qaenv1.war'
-	}
+
 
 }
