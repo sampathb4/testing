@@ -17,12 +17,5 @@ node('built-in') {
 	}
 	stage('Continous Testing') 
 	{
-    // some block
-	sh 'echo "Testing Pass"'
-	}
-	stage('Continous Delivery') 
-	{
-    // some block
-	sh 'scp /home/ubuntu/.jenkins/workspace/PipelineJob/webapp/target/webapp.war	ubuntu@172.31.37.27:/var/lib/tomcat8/webapps/prodenv1.war'
-	}
+
 }
